@@ -1,1 +1,1 @@
-# git-app
+# git-app to display github profiles
