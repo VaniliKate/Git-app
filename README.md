@@ -2,6 +2,9 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli).
 
+## Author
+Kate Vanili
+
 ![alt text](src/assets/homepage.png)
 
 ## Development server
