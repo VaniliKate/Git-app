@@ -1,22 +1,35 @@
-import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
+import { NgModule } from '@angular/core';
+import {HttpClientModule} from '@angular/common/http'
+import {FormsModule} from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
+import { RoutingModule} from './routing/routing.module';
 import { AppComponent } from './app.component';
-import { PersonalProfileComponent } from './personal-profile/personal-profile.component';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { GithubComponent } from './github/github.component';
+import { BoldDirective } from './bold.directive';
+import { GithubPipe } from './github.pipe';
+import { GithubFormComponent } from './github-form/github-form.component';
+import { UserComponent } from './user/user.component';
+import { RepositoryComponent } from './repository/repository.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    PersonalProfileComponent
+    GithubComponent,
+    BoldDirective,
+    GithubPipe,
+    GithubFormComponent,
+    UserComponent,
+    RepositoryComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule,
+    RoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

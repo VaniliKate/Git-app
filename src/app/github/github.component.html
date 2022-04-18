@@ -1,0 +1,44 @@
+<section class="our-webcoderskull padding-lg">
+  <div class="container">
+    <div class="row heading heading-icon">
+      <h2 appBold>Search user Profile</h2>
+    </div>
+    <ul class="row">
+      <li class="col-12 col-md-6 col-lg-3">
+        <label for="">Live Search :</label>
+        <input type="text" class="form-control" [(ngModel)]="userName" 
+        name="name" (keyup)="DisplayUser()">
+      </li>
+      <li class="col-12 col-md-6 col-lg-6">
+        <div class="cnt-block equal-hight" style="height: 349px;">
+          <figure><img src="{{user.avatar_url}}" class="img-responsive" alt=""></figure>
+          <h3><a href="https://github.com/VaniliKate">{{user.name}}</a></h3>
+          <div class="start">
+            Date :
+            <span>{{user.creationDate|github}}</span>
+          </div>
+          <div class="start">
+            Followers :
+            <span>{{user.followers}}</span>
+          </div>
+          <div class="start">
+            Following:<span>{{user.following}}</span>
+            Public Repos:<span>{{user.public_repos}}</span>
+          </div>
+          <div class="start">
+          </div>
+        </div>
+      </li>
+      <li>
+        <div *ngFor="let repo of repos" class="cnt-block equal-hight">
+          <h3>{{repo.name}}</h3>
+          <p>Description:{{repo.description}}</p>
+          <p><a href="{{repo.repos_Url}}">{{repo.name}}</a></p>
+
+        </div>
+      </li>
+    </ul>
+
+    
+  </div>
+</section>
