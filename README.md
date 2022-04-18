@@ -25,7 +25,11 @@ Run `ng generate component component-name` to generate a new component. You can 
 - Bootstrap
 - HTML
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Setup Environment
+
+1. Clone the repo : `https://github.com/VaniliKate/git-app.git`
+2. Run `npm install`
+3. Run `ng serve --open` to run the app in your favourite browser
 
 ## Running unit tests
 
